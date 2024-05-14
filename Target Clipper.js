@@ -5,6 +5,8 @@
 // @description  Clips Target Circle Deals
 // @author       Misl3d
 // @homepageURL  https://github.com/Misl3d/Target-Clipper
+// @downloadURL  https://raw.githubusercontent.com/Misl3d/Target-Clipper/main/Target%20Clipper.js
+// @updateURL    https://raw.githubusercontent.com/Misl3d/Target-Clipper/main/Target%20Clipper.js
 // @match        *://www.target.com/circle/deals
 // @grant        none
 // ==/UserScript==
