@@ -14,4 +14,4 @@ You will just get a prompt from target to replace clipped coupons
 3. Press Load all to Card.
 
 ## Info:
-Based of https://github.com/mortonfox/shoprite-load-all-to-card, created with the help of ChatGPT
+Based on https://github.com/mortonfox/shoprite-load-all-to-card, created with the help of ChatGPT
