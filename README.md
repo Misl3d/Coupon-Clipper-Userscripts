@@ -3,7 +3,8 @@ Userscript to clip "all" the deals on  https://www.target.com/circle/deals
 
 There is a limit to how many coupons you can actually clip -_-
 the target site will just prompt you to replace already clipped coupons 
-##Installation:
+
+## Installation:
 1. Get [Tampermonkey](https://www.tampermonkey.net/) or other related  extenstion
 2. Click [Here](https://github.com/Misl3d/Target-Clipper/raw/main/Target%20Clipper.user.js) to install the script
 
