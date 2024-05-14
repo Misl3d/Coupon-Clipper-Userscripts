@@ -1,5 +1,5 @@
 # Target-Clipper
-Userscript to clip "all" the deals on  https://www.target.com/circle/deals website..
+Userscript to clip "all" the deals on  https://www.target.com/circle/deals
 
 There is a limit to how many coupons you can actually clip -_-
 the target site will just prompt you to replace already clipped coupons 
