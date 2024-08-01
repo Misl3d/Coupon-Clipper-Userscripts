@@ -34,7 +34,7 @@ function runSelect(event) {
 
 function insertButton(btn, nextBtn) {
   function waitForSite() {
-    var targetelem = document.getElementsByClassName('sc-38c8f230-4 kvHHxh');
+    var targetelem = document.getElementsByClassName('sc-38c8f230-0 hCgzsm');
     if (targetelem !== null && targetelem[0] !== undefined) {
       clearInterval(waitForSiteTimer);
       targetelem[0].parentNode.insertBefore(btn, targetelem[0]);
