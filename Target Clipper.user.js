@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Target Circle Clipper
 // @namespace    Misl3d
-// @version      0.0.1
+// @version      0.0.2
 // @description  Clips Target Circle Deals
 // @author       Misl3d
 // @homepageURL  https://github.com/Misl3d/Target-Clipper
@@ -34,7 +34,7 @@ function runSelect(event) {
 
 function insertButton(btn, nextBtn) {
   function waitForSite() {
-    var targetelem = document.getElementsByClassName('styles__OffersCategoryHeading-sc-1oq25qv-1 hElGfA');
+    var targetelem = document.getElementsByClassName('sc-38c8f230-4 kvHHxh');
     if (targetelem !== null && targetelem[0] !== undefined) {
       clearInterval(waitForSiteTimer);
       targetelem[0].parentNode.insertBefore(btn, targetelem[0]);
