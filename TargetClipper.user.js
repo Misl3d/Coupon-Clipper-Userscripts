@@ -5,6 +5,8 @@
 // @description  Target Circle Coupon Clipper
 // @author       Misl3d
 // @match        *://www.target.com/circle/deals
+// @updateURL    https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/TargetClipper.user.js
+// @downloadURL  https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/TargetClipper.user.js
 // ==/UserScript==
 // jshint esversion: 6
 
