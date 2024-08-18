@@ -2,7 +2,7 @@
 // @name         Shoprite Clipper
 // @namespace    http://tampermonkey.net/
 // @version      2024-09-18
-// @description  Clip shot Rite coupons
+// @description  Clip Shoprite coupons
 // @author       Misl3d
 // @match        *://www.shoprite.com/sm/planning/rsid/538/digital-coupon
 // @match        *://shop-rite-web-prod.azurewebsites.net/*
