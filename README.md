@@ -18,4 +18,5 @@ You will just get a prompt from target to replace clipped coupons
 
 ## Credit:
 Based on https://github.com/mortonfox/shoprite-load-all-to-card
+
 Misl3d(me) added code and created target clipper with ChatGPT assist. 
