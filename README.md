@@ -1,19 +1,21 @@
 # Shoprite 
-All credit to https://github.com/mortonfox/shoprite-load-all-to-card/tree/main
+Made some changes to mortonfox's extension to work as userscript.
 
-I just took that and change it a little to work as a userscript.
-Also used as a starting point for the target clipper
+[Shoprite Coupon Page
+](https://www.shoprite.com/sm/planning/rsid/538/digital-coupon)
 
+'Load All to Card' button will add all coupons
 # Target
 Userscript to clip "all" the deals on  https://www.target.com/circle/deals
 
 There is a limit to the number of coupons you can clip :sob:  
 You will just get a prompt from target to replace clipped coupons
 
-## Usage: 
-1. The page has a load more button, to get around this use the Load All button on.
-2. An alert will show when the page is loaded, and will attempt to scroll you close to the load all to card button.
-3. Press Load all to Card.
+'Load All' to load all the coupons on page
 
-## Info:
-Based on https://github.com/mortonfox/shoprite-load-all-to-card, created with the help of ChatGPT
+'Load All to Card' will clip all the coupons on the page
+
+
+## Credit:
+Based on https://github.com/mortonfox/shoprite-load-all-to-card
+Misl3d(me) added code and created target clipper with ChatGPT assist. 
