@@ -1,5 +1,6 @@
 # Shoprite 
 All credit to https://github.com/mortonfox/shoprite-load-all-to-card/tree/main
+
 I just took that and change it a little to work as a userscript.
 Also used as a starting point for the target clipper
 
