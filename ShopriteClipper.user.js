@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Shoprite Clipper
-// @namespace    http://tampermonkey.net/
 // @version      2024-09-18
 // @description  Clip Shoprite coupons
 // @author       Misl3d
 // @match        *://www.shoprite.com/sm/planning/rsid/538/digital-coupon
 // @match        *://shop-rite-web-prod.azurewebsites.net/*
+// @updateURL    https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/ShopriteClipper.user.js
+// @downloadURL  https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/ShopriteClipper.user.js
 // ==/UserScript==
-
 // jshint esversion: 6
 
 function runSelect(event) {
@@ -67,5 +67,3 @@ function init() {
 }
 
 init();
-
-// -- The End --
