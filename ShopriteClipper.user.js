@@ -6,7 +6,6 @@
 // @author       Misl3d
 // @match        *://www.shoprite.com/sm/planning/rsid/538/digital-coupon
 // @match        *://shop-rite-web-prod.azurewebsites.net/*
-// @grant        none
 // ==/UserScript==
 
 // jshint esversion: 6
