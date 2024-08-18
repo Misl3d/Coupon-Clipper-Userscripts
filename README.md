@@ -6,7 +6,7 @@ You will just get a prompt from target to replace clipped coupons
 
 ## Installation:
 1. Get [Tampermonkey](https://www.tampermonkey.net/) or other related  extenstion
-2. Click [Here](https://github.com/Misl3d/Target-Clipper/raw/main/Target%20Clipper.user.js) to install the script
+2. Click [Here](https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/Target%20Clipper.user.js) to install the script
 
 ## Usage: 
 1. The page has a load more button, to get around this use the Load All button on.
