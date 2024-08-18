@@ -1,12 +1,10 @@
 // ==UserScript==
 // @name         Target
 // @namespace    http://tampermonkey.net/
-// @version      2024-05-12
-// @description  try to take over the world!
+// @version      2024-09-18
+// @description  Target Circle Coupon Clipper
 // @author       Misl3d
 // @match        *://www.target.com/circle/deals
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
-// @grant        none
 // ==/UserScript==
 // jshint esversion: 6
 
