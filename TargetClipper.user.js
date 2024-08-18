@@ -1,13 +1,11 @@
 // ==UserScript==
-// @name         Target Circle Clipper
-// @namespace    Misl3d
-// @version      0.0.2
-// @description  Clips Target Circle Deals
+// @name         Target
+// @namespace    http://tampermonkey.net/
+// @version      2024-05-12
+// @description  try to take over the world!
 // @author       Misl3d
-// @homepageURL  https://github.com/Misl3d/Target-Clipper
-// @downloadURL  https://raw.githubusercontent.com/Misl3d/Target-Clipper/main/Target%20Clipper.js
-// @updateURL    https://raw.githubusercontent.com/Misl3d/Target-Clipper/main/Target%20Clipper.js
 // @match        *://www.target.com/circle/deals
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
 // @grant        none
 // ==/UserScript==
 // jshint esversion: 6
@@ -15,21 +13,25 @@
 function runSelect(event) {
   event.preventDefault();
 
-  // Click on every "load to card" button.
-  var load2crd = document.getElementsByClassName('styles__StyledBaseButtonInternal-sc-ysboml-0 jObvsS');
-  console.log(load2crd.length + ' coupons found');
-  var clicked = 0;
+// Select all elements with the data-test attribute equal to 'offer-grid-card'.
+var gridCards = document.querySelectorAll('[data-test="offer-grid-card"]');
+console.log(gridCards.length + ' coupons found');
+var clicked = 0;
 
-  // Iterate in reverse because clicking on a button mutates the coupon list.
-  for (var btn of Array.from(load2crd).reverse()) {
-    var labelDiv = btn.parentElement.querySelector('.styles__StyledLabelDiv-sc-82egy0-1.gXkfRz'); // Assuming the label is a sibling of the button and has this specific class
+// Iterate over each grid card.
+for (var card of gridCards) {
+    // Find the button inside the card that contains the text "Apply".
+    var applyButton = Array.from(card.querySelectorAll('button')).find(btn => btn.textContent.includes('Apply'));
 
-    if (labelDiv && labelDiv.textContent.includes('Apply')) {
-        btn.click();
+    // If the button is found, click it.
+    if (applyButton) {
+        applyButton.click();
         clicked++;
     }
-  }
-  console.log(clicked + ' coupons clicked');
+}
+
+console.log(clicked + ' coupons clicked');
+
 }
 
 function insertButton(btn, nextBtn) {
