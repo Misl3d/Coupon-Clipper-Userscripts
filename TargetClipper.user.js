@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Target
 // @namespace    http://tampermonkey.net/
-// @version      2024-09-18
+// @version      2024-12-28
 // @description  Target Circle Coupon Clipper
 // @author       Misl3d
-// @match        *://www.target.com/circle/deals
+// @match        https://www.target.com/l/target-circle-deals*
 // @updateURL    https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/TargetClipper.user.js
 // @downloadURL  https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/TargetClipper.user.js
 // ==/UserScript==
@@ -34,42 +34,33 @@ console.log(clicked + ' coupons clicked');
 
 }
 
-function insertButton(btn, nextBtn) {
-  function waitForSite() {
-    var targetelem = document.getElementsByClassName('sc-38c8f230-0 hCgzsm');
-    if (targetelem !== null && targetelem[0] !== undefined) {
-      clearInterval(waitForSiteTimer);
-      targetelem[0].parentNode.insertBefore(btn, targetelem[0]);
-      if (nextBtn) {
-        targetelem[0].parentNode.insertBefore(nextBtn, btn.nextSibling);
-      }
-    }
-  }
-
-  // Wait for site to finish loading before inserting button.
-  var waitForSiteTimer = setInterval(waitForSite, 100);
-}
-
 function init() {
-  // Make a new button for our action.
+  // Make a new button for "Load All To Card"
   var newbutton = document.createElement('button');
   newbutton.name = 'load_all_to_card';
   newbutton.id = 'load_all_to_card';
-  newbutton.style.cssText = 'background-color: #fff; color: #E82A24; font-weight: 700; border: solid #E82A24; padding: 6px 10px; cursor: pointer; margin: 5px';
+  newbutton.style.cssText = `
+    background-color: #fff;
+    color: #E82A24;
+    font-weight: 700;
+    border: solid #E82A24;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 150px;
+  `;
 
-  newbutton.addEventListener('mouseenter',
-    () => {
-      newbutton.style.color = '#fff';
-      newbutton.style.backgroundColor = '#E82A24';
-    }
-  );
+  newbutton.addEventListener('mouseenter', () => {
+    newbutton.style.color = '#fff';
+    newbutton.style.backgroundColor = '#E82A24';
+  });
 
-  newbutton.addEventListener('mouseleave',
-    () => {
-      newbutton.style.color = '#E82A24';
-      newbutton.style.backgroundColor = '#fff';
-    }
-  );
+  newbutton.addEventListener('mouseleave', () => {
+    newbutton.style.color = '#E82A24';
+    newbutton.style.backgroundColor = '#fff';
+  });
 
   newbutton.appendChild(document.createTextNode('Load All To Card'));
   newbutton.addEventListener('click', runSelect);
@@ -78,30 +69,38 @@ function init() {
   var loadAllButton = document.createElement('button');
   loadAllButton.name = 'load_all';
   loadAllButton.id = 'load_all';
-  loadAllButton.style.cssText = 'background-color: #fff; color: #000; font-weight: 700; border: solid #000; padding: 6px 10px; cursor: pointer; margin: 5px';
+  loadAllButton.style.cssText = `
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    border: solid #000;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  `;
 
-  loadAllButton.addEventListener('mouseenter',
-    () => {
-      loadAllButton.style.color = '#fff';
-      loadAllButton.style.backgroundColor = '#000';
-    }
-  );
+  loadAllButton.addEventListener('mouseenter', () => {
+    loadAllButton.style.color = '#fff';
+    loadAllButton.style.backgroundColor = '#000';
+  });
 
-  loadAllButton.addEventListener('mouseleave',
-    () => {
-      loadAllButton.style.color = '#000';
-      loadAllButton.style.backgroundColor = '#fff';
-    }
-  );
+  loadAllButton.addEventListener('mouseleave', () => {
+    loadAllButton.style.color = '#000';
+    loadAllButton.style.backgroundColor = '#fff';
+  });
 
   loadAllButton.appendChild(document.createTextNode('Load All'));
   loadAllButton.addEventListener('click', LoadAll); // Assuming LoadAll is defined elsewhere
 
-  insertButton(newbutton, loadAllButton);
+  // Append the buttons to the body
+  document.body.appendChild(newbutton);
+  document.body.appendChild(loadAllButton);
 }
 
-init();
-
+init()
 
 function LoadAll() {
     'use strict';
