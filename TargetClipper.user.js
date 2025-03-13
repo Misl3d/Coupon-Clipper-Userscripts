@@ -13,8 +13,8 @@
 function runSelect(event) {
   event.preventDefault();
 
-// Select all elements with the data-test attribute equal to 'offer-grid-card'.
-var gridCards = document.querySelectorAll('[data-test="offer-grid-card"]');
+// Select all elements with the data-test attribute equal to 'offer-card'.
+var gridCards = document.querySelectorAll('[data-test="offer-card"]');
 console.log(gridCards.length + ' coupons found');
 var clicked = 0;
 
