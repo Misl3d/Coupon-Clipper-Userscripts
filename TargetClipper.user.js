@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Target
 // @namespace    http://tampermonkey.net/
-// @version      2024-12-28
+// @version      2025-3-13
 // @description  Target Circle Coupon Clipper
 // @author       Misl3d
 // @include      *target.com/l/target-circle-deals*
