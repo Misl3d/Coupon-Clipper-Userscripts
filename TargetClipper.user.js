@@ -4,7 +4,7 @@
 // @version      2024-12-28
 // @description  Target Circle Coupon Clipper
 // @author       Misl3d
-// @match        https://www.target.com/l/target-circle-deals*
+// @include      *target.com/l/target-circle-deals*
 // @updateURL    https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/TargetClipper.user.js
 // @downloadURL  https://github.com/Misl3d/Coupon-Clipper-Userscripts/raw/main/TargetClipper.user.js
 // ==/UserScript==
