@@ -1,6 +1,4 @@
 # Shoprite 
-Made some changes to mortonfox's extension to work as userscript.
-
 [Shoprite Coupon Page
 ](https://www.shoprite.com/sm/planning/rsid/538/digital-coupon)
 
